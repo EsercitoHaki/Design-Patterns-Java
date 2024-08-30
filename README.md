@@ -11,6 +11,20 @@ Design Pattern là những mô hình hoặc giải pháp tiêu chuẩn cho các 
 ## Phân loại Design Pattern
 Design Patterns thường được phân thành ba nhóm chính:
 
+| Creational       | Structure | Behavioral              |
+|------------------|-----------|-------------------------|
+| Abstract factory | Adapter   | Chain of responsibility |
+| Builder          | Bridge    | Command                 |
+| Factory          | Composite | Interpreter             |
+| Prototype        | Decorator | Iterator                |
+| Singleton        | Facade    | Mediator                |
+| Flyweight        | Memento   | Memento                 |
+|                  | Proxy     | Observer                |
+|                  |           | Strategy                |
+|                  |           | Template Method         |
+|                  |           | Visitor                 |
+|                  |           | State                   |
+
 **1.** **Creational Patterns (Mẫu Tạo Thực):** Xác định cách tạo đối tượng mà không phải phụ thuộc vào lớp cụ thể nào.
 
 - **Singleton:** Đảm bảo chỉ có một instance của một lớp và cung cấp một điểm truy cập toàn cầu đến instance đó.
@@ -26,6 +40,8 @@ Design Patterns thường được phân thành ba nhóm chính:
 - **Facade:** Cung cấp một giao diện đơn giản hơn cho một hệ thống phức tạp.
 - **Composite:** Cho phép khách hàng xử lý các đối tượng đơn lẻ và tổ hợp của chúng theo cách đồng nhất.
 - **Bridge:** Tách giao diện khỏi cài đặt, cho phép chúng thay đổi độc lập với nhau.
+- **Flyweight:** Giảm thiểu việc sử dụng tài nguyên bằng cách chia sẻ các đối tượng tương tự.
+- **Proxy:** Cung cấp một đối tượng đại diện hoặc giữ chỗ cho một đối tượng khác.
 
 **3.** **Behavioral Patterns (Mẫu Hành Vi):** Xác định cách các đối tượng và lớp tương tác với nhau.
 
@@ -34,6 +50,12 @@ Design Patterns thường được phân thành ba nhóm chính:
 - **Command:** Biến một yêu cầu thành một đối tượng, cho phép lưu trữ, hủy bỏ hoặc thực hiện yêu cầu.
 - **State:** Cho phép một đối tượng thay đổi hành vi khi trạng thái của nó thay đổi.
 - **Mediator:** Giảm sự phụ thuộc giữa các đối tượng bằng cách định tuyến thông tin thông qua một đối tượng trung gian.
+- **Memento:** Cung cấp cơ chế để phục hồi trạng thái trước đó của một đối tượng mà không làm lộ cấu trúc bên trong của nó.
+- **Chain of Responsibility:** Cho phép các đối tượng xử lý một yêu cầu mà không cần phải xác định người xử lý cụ thể.
+- **Iterator:** Cung cấp cách truy cập các phần tử của một đối tượng tuần tự mà không cần lộ cấu trúc nội bộ của nó.
+- **Visitor:** Cho phép thêm các hành vi mới vào các đối tượng mà không thay đổi các lớp của chúng.
+- **Interpreter:** Cung cấp một cách để giải thích hoặc phân tích ngữ nghĩa của một ngôn ngữ hoặc cú pháp cụ thể. Thường dùng trong các hệ thống xử lý ngôn ngữ hoặc các ngữ nghĩa phức tạp.
+- **Template Method:** Định nghĩa cấu trúc của một thuật toán trong lớp cơ sở, nhưng cho phép các lớp con thay đổi các bước cụ thể của thuật toán mà không thay đổi cấu trúc của thuật toán đó.
 
 ## Ví dụ
 - **Singleton:** Trong một ứng dụng, bạn chỉ cần một instance của lớp *`ConfigurationManager`* để quản lý cấu hình toàn cục.
