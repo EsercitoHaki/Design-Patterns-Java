@@ -4,15 +4,19 @@ Strategy Design Patterns là một trong những mẫu thiết kế hành vi (Be
 
 ## Các thành phần chính
 **1.** **Context:** Là đối tượng sử dụng thuật toán. Context thường giữ mootj tham chiếu đến một đối tượng Strategy cụ thể và sử dụng nó để thực hiện hành động.
+
 **2.** **Strategy:** Là một giao diện (hoặc một lớp trừu tượng) định nghĩa các phương thức mà tất cả các thuật toán phải triển khai.
+
 **3.** **Concrete Strategies:** Là các lớp cụ thể triển khai Strategy Interface, mỗi lớp chứa một thuật toán riêng biệt.
 
 ## Cách hoạt động
 - Context không biết hoặc không quan tâm đến lớp cụ thể nàoo của Strategy đang được sử dụng, nói chỉ biết rằng nó có thể gọi các phương thức của Strategy để thực hiện hành động.
+
 - Các thuật toán (Concrete Strategies) có thể được thay đổi trong lúc chạy bằng cách thay thế đối tượng Strategy hiện tại trong Context bằng một đối tượng khác.
 
 ## Ưu điểm
 - **Thay đổi dễ dàng:** Bạn có thể thêm hoặc thay đổi thuật toán mà không cần phải chỉnh sửa mã nguồn của Context.
+
 - **Tăng khả năng tái sử dụng:** Các thuật toán có thể được sử dụng lại trong các ngữ cảnh khác nhau.
 - **Đơn giản hoá mã nguồn:** Giảm thiểu các câu lệnh điều kiện phức tạp trong Context.
 
