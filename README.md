@@ -18,9 +18,9 @@ Design Patterns thường được phân thành ba nhóm chính:
 | Factory          | Composite | Interpreter             |
 | Prototype        | Decorator | Iterator                |
 | Singleton        | Facade    | Mediator                |
-| Flyweight        | Memento   | Memento                 |
+|                  | Memento   | Memento                 |
 |                  | Proxy     | Observer                |
-|                  |           | Strategy                |
+|                  | Flyweight | Strategy                |
 |                  |           | Template Method         |
 |                  |           | Visitor                 |
 |                  |           | State                   |
