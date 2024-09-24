@@ -9,7 +9,9 @@ State cho phép đối tượng thể hiện hành vi khác nhau tuỳ thuộc v
 ## Thành phần
 
 **1.** **Context:** Đối tượng này có trạng thái hiện tại và hành vi của nó thay đổi dựa trên trạng thái đó. Nó duy trì một tham chiếu đến một đối tượng trạng thái cụ thể.
+
 **2.** **State Interface:** Định nghĩa một giao diện chung cho tất cả các trạng thái cụ thể. Nó khai báo các phương thức mà các trạng thái cụ thể sẽ triển khai.
+
 **3.** **Concrete State:** Các lớp trạng thái cụ thể, mỗi lớp đại diện cho một trạng thái của Context. Khi trạng thái thay đổi, nó sẽ cài đặt các phương thức của State Interface theo cách khác nhau.
 
 ## Cách hoạt động
